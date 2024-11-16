@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e1f192c-193b-405b-934d-894bbb9331d0" name="Changes" comment="Add PokerSpiel, PokerSpieler &amp; PokerModel" />
+    <list default="true" id="9e1f192c-193b-405b-934d-894bbb9331d0" name="Changes" comment="Add PokerSpiel, PokerSpieler &amp; PokerModel">
+      <change afterPath="$PROJECT_DIR$/src/PokerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/example.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PokerFrame.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Gustav245434"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Gustav245434/Holdem-Hustle",
+    "accountId": "fc859a40-e0c1-450b-9b4d-260481629666"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -34,10 +52,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Application.PokerFrame.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/gusta/IdeaProjects/Holdem-Hustle",
@@ -53,7 +74,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PokerFrame">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gusta\IdeaProjects\Holdem-Hustle\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Holdem Hustle" />
@@ -70,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PokerFrame" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.PokerFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -95,10 +121,32 @@
       <workItem from="1731403928115" duration="2286000" />
       <workItem from="1731757769685" duration="18000" />
       <workItem from="1731760394801" duration="6740000" />
+      <workItem from="1731780217758" duration="2723000" />
     </task>
+    <task id="LOCAL-00001" summary="Add PokerSpiel, PokerSpieler &amp; PokerModel">
+      <option name="closed" value="true" />
+      <created>1731780225833</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731780225833</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add PokerSpiel, PokerSpieler &amp; PokerModel">
+      <option name="closed" value="true" />
+      <created>1731780231479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731780231479</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add PokerSpiel, PokerSpieler &amp; PokerModel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add PokerSpiel, PokerSpieler &amp; PokerModel" />
   </component>
 </project>
