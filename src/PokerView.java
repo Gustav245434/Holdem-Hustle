@@ -18,7 +18,7 @@ public class PokerView extends JFrame {
     public PokerView() throws IOException {
 
         setTitle("Holdem Hustle");
-        setSize(800, 600);
+        setSize(1100, 600);
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
         setLocation(dimension.width / 2 - this.getWidth() / 2, dimension.height / 2 - this.getHeight() / 2);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,7 +28,7 @@ public class PokerView extends JFrame {
         cardLayout = new CardLayout();
         startseite = new JPanel(cardLayout);
 
-        BufferedImage myPicture = ImageIO.read(new File("src/example.png"));
+        BufferedImage myPicture = ImageIO.read(new File("src/logo.png"));
         JLabel picLabel = new JLabel(new ImageIcon(myPicture));
         add(picLabel, BorderLayout.PAGE_START);
 
