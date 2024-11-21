@@ -14,6 +14,26 @@ public class PokerView extends JFrame {
     private JPanel startseite;
     private CardLayout cardLayout;
     private JButton startButton;
+    private BufferedImage logo;
+    private JLabel picLabel;
+
+    public BufferedImage getLogo() {
+        return logo;
+    }
+
+    public void setLogo(BufferedImage logo) {
+        if(logo == null) return;
+        this.logo = logo;
+    }
+
+    public JLabel getPicLabel() {
+        return picLabel;
+    }
+
+    public void setPicLabel(JLabel picLabel) {
+        if(picLabel == null) return;
+        this.picLabel = picLabel;
+    }
 
     public PokerView() throws IOException {
 
@@ -28,9 +48,15 @@ public class PokerView extends JFrame {
         cardLayout = new CardLayout();
         startseite = new JPanel(cardLayout);
 
-        BufferedImage myPicture = ImageIO.read(new File("src/logo.png"));
-        JLabel picLabel = new JLabel(new ImageIcon(myPicture));
-        add(picLabel, BorderLayout.PAGE_START);
+        this.logo = ImageIO.read(new File("src/logo.png"));
+        Image image = this.logo.getScaledInstance(800, 500, Image.SCALE_DEFAULT);
+        ImageIcon icon = new ImageIcon(image);
+        this.picLabel = new JLabel();
+        this.picLabel.setIcon(icon);
+        this.picLabel.setVerticalAlignment(SwingConstants.CENTER);
+        this.picLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        add(this.picLabel, BorderLayout.PAGE_START);
+        this.addComponentListener(new ResizeImageHandler());
 
         this.startButton = new JButton("Start");
         add(this.startButton, BorderLayout.CENTER);
