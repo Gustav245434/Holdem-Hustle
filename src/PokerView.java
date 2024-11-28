@@ -13,8 +13,11 @@ public class PokerView extends JFrame {
 
     private JPanel startseite;
     private JPanel startseitePanel;
+    private JPanel buttonLabel;
     private CardLayout cardLayout;
     private JButton startButton;
+    private JButton optionButton;
+    private JButton quitButton;
     private BufferedImage logo;
     private JLabel picLabel;
 
@@ -61,9 +64,22 @@ public class PokerView extends JFrame {
         this.startseitePanel.add(this.picLabel);
         this.addComponentListener(new ResizeImageHandler());
 
-        this.startButton = new JButton("Start");
+        this.startButton = new JButton("Beginnen");
         this.startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
-        this.startseitePanel.add(this.startButton);
+        this.optionButton = new JButton("Optionen");
+        this.optionButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        this.quitButton = new JButton("Beenden");
+        this.quitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        this.quitButton.addActionListener(new QuitButtonListener());
+
+        this.buttonLabel = new JPanel();
+        this.buttonLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        this.buttonLabel.setLayout(new FlowLayout());
+        this.buttonLabel.add(startButton);
+        this.buttonLabel.add(optionButton);
+        this.buttonLabel.add(quitButton);
+
+        this.startseitePanel.add(this.buttonLabel);
         startseite.add(this.startseitePanel);
 
         // Füge die Seiten dem Hauptpanel hinzu
@@ -78,4 +94,5 @@ public class PokerView extends JFrame {
 
         this.setVisible(true);
     }
+
 }
