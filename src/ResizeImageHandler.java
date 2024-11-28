@@ -9,7 +9,7 @@ public class ResizeImageHandler implements ComponentListener {
     public void componentResized(ComponentEvent e) {
         if(e == null || e.getComponent() == null) return;
         if (e.getComponent() instanceof PokerView view) {
-            Image image = calculateScaledImage(view.getLogo(), view.getWidth(), (int) (view.getHeight() / 1.25));
+            Image image = calculateScaledImage(view.getLogo(), view.getWidth(), (int) (view.getHeight() / 1.3));
             ImageIcon icon = new ImageIcon(image);
             view.getPicLabel().setIcon(icon);
         }

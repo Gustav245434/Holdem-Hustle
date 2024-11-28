@@ -12,6 +12,7 @@ import java.util.Arrays;
 public class PokerView extends JFrame {
 
     private JPanel startseite;
+    private JPanel startseitePanel;
     private CardLayout cardLayout;
     private JButton startButton;
     private BufferedImage logo;
@@ -43,10 +44,11 @@ public class PokerView extends JFrame {
         setLocation(dimension.width / 2 - this.getWidth() / 2, dimension.height / 2 - this.getHeight() / 2);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        this.setLayout(new BorderLayout());
-
         cardLayout = new CardLayout();
         startseite = new JPanel(cardLayout);
+
+        this.startseitePanel = new JPanel();
+        this.startseitePanel.setLayout(new BoxLayout(this.startseitePanel, BoxLayout.Y_AXIS));
 
         this.logo = ImageIO.read(new File("src/logo.png"));
         Image image = this.logo.getScaledInstance(800, 500, Image.SCALE_DEFAULT);
@@ -55,11 +57,14 @@ public class PokerView extends JFrame {
         this.picLabel.setIcon(icon);
         this.picLabel.setVerticalAlignment(SwingConstants.CENTER);
         this.picLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        add(this.picLabel, BorderLayout.PAGE_START);
+        this.picLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        this.startseitePanel.add(this.picLabel);
         this.addComponentListener(new ResizeImageHandler());
 
         this.startButton = new JButton("Start");
-        add(this.startButton, BorderLayout.CENTER);
+        this.startButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        this.startseitePanel.add(this.startButton);
+        startseite.add(this.startseitePanel);
 
         // Füge die Seiten dem Hauptpanel hinzu
         //startseite.add(homePanel, "Home");
