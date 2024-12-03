@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e1f192c-193b-405b-934d-894bbb9331d0" name="Changes" comment="Remove example image &amp; add new button to start menu">
-      <change afterPath="$PROJECT_DIR$/src/QuitButtonListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Startseite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PokerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PokerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ResizeImageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResizeImageHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +122,7 @@
       <workItem from="1731757769685" duration="18000" />
       <workItem from="1731760394801" duration="6740000" />
       <workItem from="1731780217758" duration="2723000" />
+      <workItem from="1733239509256" duration="1992000" />
     </task>
     <task id="LOCAL-00001" summary="Add PokerSpiel, PokerSpieler &amp; PokerModel">
       <option name="closed" value="true" />
